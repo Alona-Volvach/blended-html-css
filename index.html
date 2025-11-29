@@ -23,19 +23,19 @@
               <a class="header-nav-link current" href="">Home</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">About Us</a>
+              <a class="header-nav-link current" href="">About Us</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">Catalog</a>
+              <a class="header-nav-link current" href="">Catalog</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">Sale</a>
+              <a class="header-nav-link current" href="">Sale</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">Reviews</a>
+              <a class="header-nav-link current" href="">Reviews</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">Contact Us</a>
+              <a class="header-nav-link current" href="">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -354,45 +354,39 @@
                 phone, and message and we'll get back to you shortly.
               </p>
               <form class="form-contactus">
-                <div class="form-field">
-                  <label class="field-wrapper">
-                    <input
-                      class="field-text"
-                      type="text"
-                      id="user-name"
-                      name="user-name"
-                    />
-                  </label>
-                </div>
-                <div class="form-field">
-                  <label class="field-wrapper">
-                    <input
-                      class="field-text"
-                      type="email"
-                      id="user-email"
-                      name="user-email"
-                    />
-                  </label>
-                </div>
-                <div class="form-field">
-                  <label class="field-wrapper">
-                    <input
-                      class="field-text"
-                      type="tel"
-                      id="user-phone"
-                      name="user-phone"
-                    />
-                  </label>
-                </div>
-                <div class="form-field-end">
+                <label class="field-wrapper" for="username">
+                  <input
+                    class="field-text"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                  />
+                </label>
+                <label class="field-wrapper" for="usermail">
+                  <input
+                    class="field-text"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                  />
+                </label>
+                <label class="field-wrapper" for="usertel">
+                  <input
+                    class="field-text"
+                    type="tel"
+                    id="user-phone"
+                    name="user-phone"
+                  />
+                </label>
+                <label>
                   <textarea
                     class="textarea-comment"
                     name="user-comment"
                     id="user-comment"
                     placeholder="Text input"
                   ></textarea>
-                </div>
-                <button type="button">Send</button>
+                </label>
+                <button class="button-contactus" type="button">Send</button>
               </form>
             </div>
             <img
@@ -407,86 +401,95 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <a class="footer-logo" href="./index.html">watchcharm</a>
-        <ul class="footer-list-link">
-          <li class="footer-item-link">
-            <a
-              class="footer-link"
-              href="https://www.facebook.com"
-              target="_blank"
-              aria-label="facebook link"
-            >
-              <img src="./images/facebook.svg" alt="facebook" width="36" />
-            </a>
-          </li>
-          <li class="footer-item-link">
-            <a
-              class="footer-link"
-              href="https://www.instagram.com"
-              target="_blank"
-              aria-label="instagram link"
-            >
-              <img src="./images/instagram.svg" alt="instagram" width="36" />
-            </a>
-          </li>
-          <li class="footer-item-link">
-            <a
-              class="footer-link"
-              href="https://www.youtube.com"
-              target="_blank"
-              aria-label="youtube link"
-            >
-              <img src="./images/youtube.svg" alt="youtube" width="36" />
-            </a>
-          </li>
-        </ul>
-        <p class="footer-text">
-          Have the time of your life with our watches: where high-class
-          craftsmanship meets impeccable design
-        </p>
         <div class="footer-contact">
+          <div class="footer-logo-link">
+            <a class="footer-logo" href="./index.html">watchcharm</a>
+            <ul class="footer-list-link">
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-link"
+                  target="_blank"
+                  href="https://www.facebook.com/"
+                >
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-link"
+                  target="_blank"
+                  href="https://www.instagram.com/"
+                >
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-link"
+                  target="_blank"
+                  href="https://www.youtube.com/"
+                >
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer-text">
+            Have the time of your life with our watches: where high-class
+            craftsmanship meets impeccable design
+          </p>
           <a class="footer-tel" href="tel:+380684439426">+380 (68) 443-94-26</a>
         </div>
-        <ul class="footer-list-menu">
-          <li class="footer-item-menu">
-            <a class="footer-link-menu" href="">Home</a>
-          </li>
-          <li class="footer-item-menu">
-            <a class="footer-link-menu" href="">About Us</a>
-          </li>
-          <li class="footer-item-menu">
-            <a class="footer-link-menu" href="">Catalog</a>
-          </li>
-          <li class="footer-item-menu">
-            <a class="footer-link-menu" href="">Sale</a>
-          </li>
-          <li class="footer-item-menu">
-            <a class="footer-link-menu" href="">Reviews</a>
-          </li>
-          <li class="footer-item-menu">
-            <a class="footer-link-menu" href="">Contact Us</a>
-          </li>
-        </ul>
-        <address class="footer-adress">
-          <a
-            class="footer-link-adress"
-            href="https://maps.app.goo.gl/9zJFtFv56Rv4HLLo8"
-            target="_blank"
-          >
-            1678 S. Pioneer Road Salt Lake City UT 84104
-          </a>
-        </address>
-        <p class="footer-text-end">
-          &#169;2023 The Watch Spot. All rights reserved.
-        </p>
-        <ul class="footer-list-end">
-          <li class="footer-item-end">
-            <a class="footer-link-end" href="">Terms of Service</a>
-          </li>
-          <li class="footer-item-end">
-            <a class="footer-link-end" href="">Privacy Policy</a>
-          </li>
-        </ul>
+        <div class="footer-link-adress">
+          <ul class="footer-list-menu">
+            <li class="footer-item-menu">
+              <a class="footer-link-menu" href="">Home</a>
+            </li>
+            <li class="footer-item-menu">
+              <a class="footer-link-menu" href="">About Us</a>
+            </li>
+            <li class="footer-item-menu">
+              <a class="footer-link-menu" href="">Catalog</a>
+            </li>
+            <li class="footer-item-menu">
+              <a class="footer-link-menu" href="">Sale</a>
+            </li>
+            <li class="footer-item-menu">
+              <a class="footer-link-menu" href="">Reviews</a>
+            </li>
+            <li class="footer-item-menu">
+              <a class="footer-link-menu" href="">Contact Us</a>
+            </li>
+          </ul>
+          <address class="footer-adress">
+            <a
+              class="footer-link"
+              href="https://maps.app.goo.gl/9zJFtFv56Rv4HLLo8"
+              target="_blank"
+            >
+              1678 S. Pioneer Road Salt Lake City UT 84104
+            </a>
+          </address>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-text-bottom">
+            &#169;2023 The Watch Spot. All rights reserved.
+          </p>
+          <ul class="footer-list-bottom">
+            <li class="footer-item-bottom">
+              <a class="footer-link-bottom" href="">Terms of Service</a>
+            </li>
+            <li class="footer-item-bottom">
+              <a class="footer-link-bottom" href="">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
