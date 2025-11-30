@@ -354,36 +354,39 @@
                 phone, and message and we'll get back to you shortly.
               </p>
               <form class="form-contactus">
-                <label class="field-wrapper" for="username">
+                <label class="form-label" for="username">
                   <input
-                    class="field-text"
+                    class="contact-input"
                     type="text"
-                    id="user-name"
-                    name="user-name"
+                    id="username"
+                    name="username"
+                    placeholder="Name"
                   />
                 </label>
-                <label class="field-wrapper" for="usermail">
+                <label class="form-label" for="usermail">
                   <input
-                    class="field-text"
+                    class="contact-input"
                     type="email"
-                    id="user-email"
-                    name="user-email"
+                    id="usermail"
+                    name="usermail"
+                    placeholder="Email"
                   />
                 </label>
-                <label class="field-wrapper" for="usertel">
+                <label class="form-label" for="usertel">
                   <input
-                    class="field-text"
+                    class="contact-input"
                     type="tel"
-                    id="user-phone"
-                    name="user-phone"
+                    id="usertel"
+                    name="usertel"
+                    placeholder="+380"
                   />
                 </label>
-                <label>
+                <label class="form-label-textarea" for="usercomment">
                   <textarea
-                    class="textarea-comment"
-                    name="user-comment"
-                    id="user-comment"
-                    placeholder="Text input"
+                    class="contact-input contact-textarea"
+                    name="usercomment"
+                    id="usercomment"
+                    placeholder="Comment"
                   ></textarea>
                 </label>
                 <button class="button-contactus" type="button">Send</button>
